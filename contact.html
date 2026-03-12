@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 | 范文杰</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">FAN</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="index.html#works" class="nav-link">作品</a></li>
+                <li><a href="about.html" class="nav-link">关于</a></li>
+                <li><a href="contact.html" class="nav-link active">联系</a></li>
+            </ul>
+            <a href="contact.html" class="nav-cta">开始合作</a>
+        </div>
+    </nav>
+
+    <!-- 联系页面头部 -->
+    <section class="contact-hero">
+        <div class="contact-hero-bg">
+            <span class="bg-text">CONTACT</span>
+        </div>
+        <div class="contact-hero-container">
+            <div class="contact-hero-content">
+                <span class="section-tag">Get In Touch</span>
+                <h1 class="contact-hero-title">
+                    让我们一起<br><span class="highlight">创造精彩</span>
+                </h1>
+                <p class="contact-hero-desc">有项目想要合作？或者只是想聊聊设计？随时欢迎联系我。我期待与您的合作。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系信息卡片 -->
+    <section class="contact-info-section">
+        <div class="contact-info-container">
+            <div class="contact-cards">
+                <div class="contact-info-card glass">
+                    <div class="contact-info-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-info-title">邮箱</h3>
+                    <p class="contact-info-value">fanwenjie@email.com</p>
+                    <p class="contact-info-desc">工作日24小时内回复</p>
+                </div>
+                
+                <div class="contact-info-card glass">
+                    <div class="contact-info-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-info-title">位置</h3>
+                    <p class="contact-info-value">上海市</p>
+                    <p class="contact-info-desc">可接受远程合作</p>
+                </div>
+                
+                <div class="contact-info-card glass">
+                    <div class="contact-info-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-info-title">工作时间</h3>
+                    <p class="contact-info-value">周一至周五</p>
+                    <p class="contact-info-desc">9:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <div class="contact-form-wrapper">
+                <div class="form-header">
+                    <h2 class="form-title">发送消息</h2>
+                    <p class="form-desc">填写以下表单，我会尽快与您联系</p>
+                </div>
+                
+                <form class="contact-form-main glass" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">您的姓名 *</label>
+                            <input type="text" class="form-input" placeholder="请输入姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">邮箱地址 *</label>
+                            <input type="email" class="form-input" placeholder="请输入邮箱" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">联系电话</label>
+                            <input type="tel" class="form-input" placeholder="请输入电话（选填）">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">项目类型 *</label>
+                            <select class="form-input" required>
+                                <option value="">请选择项目类型</option>
+                                <option value="poster">海报设计</option>
+                                <option value="brand">品牌视觉</option>
+                                <option value="offline">线下物料</option>
+                                <option value="ui">UI/小程序设计</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">项目预算范围</label>
+                        <select class="form-input">
+                            <option value="">请选择预算范围（选填）</option>
+                            <option value="5k">5,000元以下</option>
+                            <option value="5k-10k">5,000 - 10,000元</option>
+                            <option value="10k-30k">10,000 - 30,000元</option>
+                            <option value="30k+">30,000元以上</option>
+                            <option value="discuss">面议</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">项目描述 *</label>
+                        <textarea class="form-input form-textarea" placeholder="请详细描述您的项目需求、目标受众、时间节点等信息..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">参考链接或附件</label>
+                        <input type="text" class="form-input" placeholder="如有参考链接请粘贴于此，或说明需要发送的附件">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full btn-large">
+                        <span>发送消息</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="process">
+        <div class="process-container">
+            <div class="section-header">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">合作流程</h2>
+                <p class="section-desc">简单四步，开启我们的合作</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content glass">
+                        <h3 class="step-title">需求沟通</h3>
+                        <p class="step-desc">详细了解您的项目需求、目标受众、品牌调性等信息</p>
+                    </div>
+                </div>
+                
+                <div class="process-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content glass">
+                        <h3 class="step-title">方案提案</h3>
+                        <p class="step-desc">根据需求提供设计方向和初步方案，确定设计思路</p>
+                    </div>
+                </div>
+                
+                <div class="process-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content glass">
+                        <h3 class="step-title">设计执行</h3>
+                        <p class="step-desc">深入设计制作，期间保持沟通，根据反馈进行调整</p>
+                    </div>
+                </div>
+                
+                <div class="process-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content glass">
+                        <h3 class="step-title">交付验收</h3>
+                        <p class="step-desc">完成最终设计，交付源文件，提供后续支持服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">常见问题</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <span>项目周期一般是多久？</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>根据项目复杂度不同，海报设计一般需要3-5个工作日，品牌视觉设计需要2-4周，完整的VI系统可能需要1-2个月。具体时间会在需求沟通后给出准确评估。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <span>如何收费？</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>收费根据项目类型、复杂度和工作量来确定。海报设计一般按件计费，品牌设计项目按整体报价。可以先联系我描述需求，我会提供详细的报价方案。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <span>接受远程合作吗？</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>当然接受！我有很多客户都是远程合作的。通过线上会议、即时通讯等方式，可以高效地完成项目沟通和协作。距离不是问题。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <span>修改次数有限制吗？</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>一般项目包含2-3轮修改。在方案确定前的修改不计入次数。我的目标是让您满意，所以会在合理范围内尽量配合调整，确保最终效果符合预期。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">FAN</span>
+                    <p class="footer-desc">用心设计，创造价值</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">首页</a>
+                    <a href="index.html#works" class="footer-link">作品</a>
+                    <a href="about.html" class="footer-link">关于</a>
+                    <a href="contact.html" class="footer-link">联系</a>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+8613800138000" class="contact-icon-link" title="电话">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:fanwenjie@email.com" class="contact-icon-link" title="邮箱">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact-icon-link" title="地址">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 范文杰. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
